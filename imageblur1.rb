@@ -1,5 +1,4 @@
 def image
-# image = Array.new(4) {Array.new(4)}
 
 
 image = Array.new([
@@ -10,14 +9,11 @@ image = Array.new([
 ])  
 end 
 
-# puts "-----------"
-# puts image
 
-# image.each {|x| p x.join(' ')}
 
 def output_image
 image.map { |x| puts x.join('')}
 end
 
-puts "=============="
+puts 
 output_image
