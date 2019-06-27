@@ -41,29 +41,27 @@ currentposition.each do |place|
 
 end
 end
+
+
+def blur (distance = 1)
+  distance.times do
+    currentposition!
+  end
 end
 
- 
+end
+
 image = Image.new([
-  [1, 0, 0, 0, 0],
-  [0, 0, 0, 0, 1],
   [0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0],
-  [1, 0, 0, 0, 0]
+  [0, 0, 1, 0, 0],
+  [0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0]
 ])  
 
 
-image.currentposition!
+image.blur(2)
 image.output_image
     
-
-
-
-
-
-
-   
-    
-
 
 
