@@ -1,6 +1,5 @@
 def image
 
-
 image = Array.new([
   [0, 0, 0, 0],
   [0, 1, 0, 0],
@@ -9,11 +8,8 @@ image = Array.new([
 ])  
 end 
 
-
-
 def output_image
 image.map { |x| puts x.join('')}
 end
 
-puts 
 output_image
